@@ -29,7 +29,7 @@
                 <div class="card-body text-center p-t-0">
                     <h3 class="font-light">Welcome back {{ auth()->user()->name }}!</h3>
                     <p>Welcome to the Quezon City University Library!</p>
-                        <a href="#" class="btn btn-light">View Logs</a>
+                        <a href="{{ route('visitor-logs.index') }}" class="btn btn-light">View Logs</a>
                 </div>
             </div>
         </div>
