@@ -82,7 +82,7 @@ class VisitorLogsController extends Controller
     {
         VisitorLogs::where('id', $visitorLogs)->update($request->validated());
 
-        return redirect(route('visitor-logs.index'));
+        return redirect(route('visitor-logs.show', $visitorLogs));
     }
 
     /**

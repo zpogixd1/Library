@@ -24,7 +24,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <h5>Monitoring</h5>
-                    <a class="btn btn-primary">Add</a>
+                    
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">

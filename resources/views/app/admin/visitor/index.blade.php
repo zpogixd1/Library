@@ -9,9 +9,9 @@
 @section('content')
 @component('app.components.admin_breadcrumb')
 @slot('breadcrumb_title')
-<h3>Monitoring</h3>
+<h3>Visitors Log</h3>
 @endslot
-<li class="breadcrumb-item active">Monitoring</li>
+<li class="breadcrumb-item active">Visitors Log</li>
 @endcomponent
 
 <div class="container-fluid">
@@ -19,8 +19,8 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
-                    <h5>Monitoring</h5>
-                    <a class="btn btn-primary">Add</a>
+                    <h5>Visitors Log</h5>
+                    {{-- <a class="btn btn-primary">Add</a> --}}
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
