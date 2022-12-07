@@ -36,7 +36,7 @@
 
                                 <div class="row d-flex justify-content-center">
                                     <div class="mb-3 col-sm-6">
-                                        <label for="inputEmail4">First Name</label>
+                                        <label for="inputEmail4">Full Name</label>
                                         <input class="form-control" id="inputEmail4" type="text" name="name" value="{{ old('name') ?? $monitor->name }}">
                                         @error('fname')
                                             <div class="invalid-feedback" style="display: block !important">{{ $message }}</div>
@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="mb-3 col-sm-6">
                                         <label for="inputEmail5">Title</label>
-                                        <input class="form-control" id="inputEmail5" type="text" name="title" value="{{ old('title') ?? $monitor->title }}">
+                                        <input class="form-control" id="inputEmail5" type="text" name="title" value="{{ old('title') ?? $monitor->title }}" readonly>
                                         @error('title')
                                             <div class="invalid-feedback" style="display: block !important">{{ $message }}</div>
                                         @enderror

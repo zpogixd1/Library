@@ -89,7 +89,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3 col-sm-6">
-                                <label for="inputAddress6">Teacher/Student ID</label>
+                                <label for="inputAddress6">Student ID</label>
                                 <input class="form-control" id="inputAddress6" type="text" name="stud_id" value="{{ old('stud_id') }}">
                                 @error('stud_id')
                                     <div class="invalid-feedback" style="display: block !important">{{ $message }}</div>

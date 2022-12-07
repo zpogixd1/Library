@@ -6,6 +6,7 @@ use App\Models\Borrow;
 use App\Models\Monitor;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\MonitorRequest;
 
 class MonitorController extends Controller
 {
@@ -71,9 +72,13 @@ class MonitorController extends Controller
      * @param  \App\Models\Monitor  $monitor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Monitor $monitor)
+    public function update(MonitorRequest $request, Monitor $monitor)
     {
-        //
+        $request->validated();
+
+        $monitor->update($request->validated());
+        
+        return redirect()->back();
     }
 
     /**
