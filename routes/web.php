@@ -34,7 +34,6 @@ Route::prefix('admin')->group(function () {
 
     Route::middleware(['auth', 'admin'])->group(function () {
         Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
-        // Route::view('/books', 'app.admin.visitor.index')->name('admin.monitor');
         Route::resource('/monitor', App\Http\Controllers\Admin\MonitorController::class);
         Route::resource('/books', App\Http\Controllers\Admin\BooksController::class);
         Route::post('monitor/{id}/mark-update', [App\Http\Controllers\Admin\MonitorController::class, 'markUpdate'])->name('monitor.mark-update');
