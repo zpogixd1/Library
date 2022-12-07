@@ -37,4 +37,11 @@ class BorrowRequest extends FormRequest
             'terms' => ['required'],
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'terms.required' => 'You need to agree in the terms and condition',
+        ];
+    }
 }

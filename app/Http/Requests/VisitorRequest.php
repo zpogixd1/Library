@@ -32,6 +32,14 @@ class VisitorRequest extends FormRequest
             'postal' => ['required', 'numeric'],
             'stud_id' => ['required'],
             'course' => ['required'],
+            'terms' => ['required'],
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'terms.required' => 'You need to agree in the terms and condition',
         ];
     }
 }
